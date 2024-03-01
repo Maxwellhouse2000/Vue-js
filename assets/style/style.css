@@ -1,0 +1,241 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+.nav {
+	padding: 15px 0;
+	background: black;
+}
+
+.nav__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav__logo {
+	color: rgb(255, 255, 255);
+	font-family: Arial;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 46px;
+	letter-spacing: 0%;
+	transition: transform 500ms ease;
+}
+.nav__logo:hover {
+	color: yellow;
+	transform: scale(1.1) translateY(-5px);
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.nav__list-link {
+	color: rgb(255, 255, 255);
+	font-family: Arial;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 29px;
+	letter-spacing: 0%;
+	transition: transform 500ms ease;
+}
+.nav__list-link:hover {
+	color: yellow;
+	text-decoration: underline;
+}
+
+.header__content {
+	min-height: 850px;
+	background-image: url('../images/header-bg.png');
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.header__title {
+	color: rgb(0, 0, 0);
+	font-family: Arial;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 46px;
+	letter-spacing: 0%;
+}
+.header__btn {
+	margin-top: 145px;
+	color: rgb(0, 0, 0);
+	font-family: Arial;
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: 0%;
+	border-radius: 10px;
+	padding: 10px 24px;
+	background: rgb(255, 255, 255);
+	transition: transform 500ms ease;
+}
+.header__btn:hover {
+	transform: scale(1.1) translateY(-5px);
+	background: yellow;
+}
+.about__me {
+	padding-top: 20px;
+	padding-bottom: 112px;
+	background: rgb(14, 28, 37);
+}
+
+.about__me-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.about__me-title {
+	color: rgb(255, 255, 255);
+	font-family: Arial;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 46px;
+	letter-spacing: 0%;
+	text-align: center;
+	margin-bottom: 49px;
+}
+.about__me-text {
+	max-width: 466px;
+}
+.about__me-subtitle {
+	color: rgb(255, 255, 255);
+	font-family: Arial;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0%;
+}
+.about__me-descr {
+	margin-top: 64px;
+	color: rgb(255, 255, 255);
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0%;
+}
+.todos {
+	padding-top: 43px;
+	padding-bottom: 70px;
+	background: rgb(92, 107, 129);
+}
+
+.todos__content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.todos__item {
+	padding: 15px;
+	border-radius: 10px;
+	background: #b12b06;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 312px;
+	width: 100%;
+}
+.todos__main-title {
+	margin-bottom: 50px;
+	color: rgb(255, 255, 255);
+	font-family: Arial;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 46px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+.todos__title {
+	margin-top: 20px;
+	color: rgb(255, 255, 255);
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 23px;
+	letter-spacing: 0%;
+}
+.todos__descr {
+	margin-top: 21px;
+	color: rgb(255, 255, 255);
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+.todos__btn {
+	margin-top: 27px;
+	color: rgb(0, 0, 0);
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 23px;
+	letter-spacing: 0%;
+	border-radius: 10px;
+	padding: 8px 24px;
+	background: rgb(255, 255, 255);
+	transition: transform 500ms ease;
+}
+.todos__btn:hover {
+	transform: scale(1.1) translateY(-5px);
+	background: yellow;
+}
+.footer {
+	padding-top: 47px;
+	padding-bottom: 55px;
+	background: rgb(0, 0, 0);
+}
+
+.footer__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.footer__title {
+	color: rgb(255, 255, 255);
+	font-family: Arial;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 46px;
+	letter-spacing: 0%;
+	text-align: center;
+	margin-bottom: 36px;
+}
+.footer__socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 205px;
+}
